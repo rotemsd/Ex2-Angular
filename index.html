@@ -1,0 +1,75 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+		<script src="js/app.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<header>תאורה חכמה לאירועים
+		</header>
+		<nav>           
+			<ul>
+				<li><a href="#/movingLights">Moving Lights</a></li>
+				<li><a href="#/ledMovingLights">Led Moving Lights</a></li>
+				<li><a href="#/parLed">פנסי פאר</a></li>
+				<li><a href="#/led">תאורת לדים</a></li>
+			</ul>      
+		</nav>
+  
+		<div id = "details">
+		
+			<script type="text/ng-template" id="pages/main.html">
+				<div id= "title" >
+					{{title}}
+				</div>
+			</script>
+			
+			<script type="text/ng-template" id="pages/movingLights.html">
+				<div id= "title" >
+					{{title}}
+				</div>
+				<div id =" pic">
+					<img src = "{{imgae}}" height="400" width="600"/>
+				</div>
+			</script>
+			
+			<script type="text/ng-template" id="pages/ledMovingLights.html">
+				<div id= "title" >
+					{{title}}
+				</div>
+				<div id =" pic">
+					<img src = "{{imgae}}" height="500" width="600"/>
+				</div>
+			</script>
+			
+			<script type="text/ng-template" id="pages/parLed.html">
+				<div id= "title" >
+					{{title}}
+				</div>
+				<div id =" pic">
+					<img src = "{{imgae}}" height="400" width="600"/>
+				</div>
+			</script>
+			
+			<script type="text/ng-template" id="pages/led.html">
+				<div id= "title" >
+					{{title}}
+				</div>
+				<div id =" pic">
+					<img src = "{{imgae}}" height="400" width="600"/>
+				</div>
+			</script>
+			
+			<div ng-view></div>
+		
+		</div>
+
+
+    
+
+    
+  </body>
+</html>
